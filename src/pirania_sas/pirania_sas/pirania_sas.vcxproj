@@ -139,10 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="land_layer.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pirania.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="land_layer.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="pirania.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
