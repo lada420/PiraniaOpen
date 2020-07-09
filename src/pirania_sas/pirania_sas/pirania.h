@@ -13,7 +13,7 @@ public:
 
     void setX(int new_x);
     void setY(int new_y);
-    void setDistance(int x1, int y1, int x2, int y2);
+    void setDistance(int x, int y);
     void setSignalLevel(double new_sig_lvl);
 
     int getX();
