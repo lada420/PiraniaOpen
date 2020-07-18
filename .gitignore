@@ -30,3 +30,16 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+/Pirania_v_2/New Unity Project/Logs/*
+/Pirania_v_2/New Unity Project/Library/*
+/Pirania_v_2/New Unity Project/Library/PageCache/*
+/Pirania_v_2/New Unity Project/Library/APIUpdater/*
+/Pirania_v_2/New Unity Project/Library/ScriptAssemblies/*
+/Pirania_v_2/New Unity Project/Temp/*
+
+**/Logs/*
+**/Library/*
+**/Library/PageCache/*
+**/Library/APIUpdater/*
+**/Library/ScriptAssemblies/*
+**/Temp/*
