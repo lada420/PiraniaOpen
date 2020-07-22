@@ -6,6 +6,7 @@ using static StatModType;
 public class Stats 
 {
     public float BaseValue;
+    int coord = 4;
 
     public float Value {
         get 
@@ -70,4 +71,11 @@ public class Stats
         }
         return (float)Math.Round(finalValue, 4);
     }
+
+    public float GetCoordinates()
+    {
+        return coord;
+    }
+
+
 }

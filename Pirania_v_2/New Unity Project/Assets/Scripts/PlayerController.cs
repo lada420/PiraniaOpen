@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         rb = GetComponent<Rigidbody2D>(); 
     }
 
@@ -30,5 +31,7 @@ public class PlayerController : MonoBehaviour
      
     
     }
+
+    
 
 }
