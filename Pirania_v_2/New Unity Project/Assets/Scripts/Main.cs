@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Stats_ns;
+using StateModifier_ns;
 
 
 public class Main : MonoBehaviour
 {
     public Stats stats;
+    public StateModifier stateModifier;
     //public PlayerController player;
     public Text coordinates;
     public GameObject PauseScreen;
+    public int coord;
     
 
 
@@ -24,6 +27,8 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //GetCoordinates();
+
     //    coordinates.text = stats.GetCoordinates().ToString();
     }
 
@@ -45,6 +50,24 @@ public class Main : MonoBehaviour
     public void OpenScene(int index)
     {
         SceneManager.LoadScene(index);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void GetCoordinates()
+    {
+        //coordinates = _lhs.Order.ToString();
+
+    }
+
+    public void radio()
+    {
+        Time.timeScale = 0f;
+        //player.enabled = false;
+        PauseScreen.SetActive(true);
     }
 
 }
