@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using StateModifier_ns;
 
 
+
+
 namespace Stats_ns
 {
 
     public class Stats 
     {
         public float BaseValue;
-        int coord = 4;
     
         public float Value {
             get 
@@ -73,11 +74,6 @@ namespace Stats_ns
                 }
             }
             return (float)Math.Round(finalValue, 4);
-        }
-    
-        public float GetCoordinates()
-        {
-            return coord;
         }
     
     
