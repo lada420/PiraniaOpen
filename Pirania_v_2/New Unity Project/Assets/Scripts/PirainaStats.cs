@@ -6,14 +6,9 @@ using System.Threading;
 
 public class PirainaStats
 {
-    public static void ThreadProc(Stats pirStat)
-    {
-        
-    }
-
-    Thread IR_thread= new Thread(new ThreadStart(ThreadProc));
-    Thread Freq_thread= new Thread(new ThreadStart(ThreadProc));
-    Thread Acoustics_thread= new Thread(new ThreadStart(ThreadProc));
+    //Thread IR_thread= new Thread(new ThreadStart(ScanByType));
+    //Thread Freq_thread= new Thread(new ThreadStart(ScanByType));
+    //Thread Acoustics_thread= new Thread(new ThreadStart(ScanByType));
     // Start is called before the first frame update
     void Start()
     {
