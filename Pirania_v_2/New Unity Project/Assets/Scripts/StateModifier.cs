@@ -1,4 +1,5 @@
 ﻿using System;
+using PiraniaStats_ns;
 
 namespace StateModifier_ns
 {
@@ -11,6 +12,7 @@ namespace StateModifier_ns
     public class StateModifier
     {
         public float Value;
+        public float FinalValue;
         public readonly StatModType Type;
         public readonly int Order;
     
@@ -31,10 +33,24 @@ namespace StateModifier_ns
                 Value = 0;
         }
 
-        public void CalculateFinalValue(Func<float, bool> runner, float new_val)
+        public void CalculateFinalValue(SigType type, float new_val)
         {
             UpdateValue(new_val); //Sanity check
-            runner(Value);
+            switch(type)
+            {
+                case(SigType.Freq):
+                    FinalValue = 0;
+                    break;
+                case(SigType.IR):
+                    FinalValue = 0;
+                    break;
+                case(SigType.Acoustics):
+                    FinalValue = 0;
+                    break;
+
+            }
+                
+            
         }
     }
 

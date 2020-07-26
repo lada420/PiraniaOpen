@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using StateModifier_ns;
 
-
-
-
 namespace Stats_ns
 {
 
@@ -17,7 +14,7 @@ namespace Stats_ns
             {
                 if(isDirty)
                 {
-                    _value =  CalculateValue();
+                    _value =  CalculateResValue();
                     isDirty = false;
                 }
                 return _value;
@@ -57,7 +54,7 @@ namespace Stats_ns
             return stateModifiers.Remove(mod);
         }
     
-        private float CalculateValue()
+        public float CalculateResValue()
         {
             float finalValue = BaseValue;
     
